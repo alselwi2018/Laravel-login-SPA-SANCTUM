@@ -15,17 +15,17 @@ class SecretController extends Controller
      */
     public function index(Request $request)
     {
-        //return \DB::table('secrets')->where('user_id', '=', \Auth::user()->id);
-       //return Secret::all();
+        //return \DB::table('secrets')->where('user_id', '=', \Auth::user()->id)->get();
+        
+       return Secret::where('user_id', '=', auth()->user()->id);
+
        //return Secret::with('user')->get();
 
-       $users = User::all();
-        $secret = Secret::all();
-        foreach ($users as $user)
-        {
-
-        return Secret::where('user_id', '=', $user->id)->get();
-        }
+        //return \DB::table('secrets')->where('user_id', '=', \Auth::user()->id)->get();
+       
+        
+        //return Secret::where('user_id', '=', \Auth::user()->id)->get();
+        
 
     }
 

@@ -1974,6 +1974,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -38372,9 +38374,7 @@ var render = function() {
               "div",
               { staticClass: "row mt-4" },
               [
-                _c("div", { staticClass: "col-sm-6 offset-3" }),
-                _vm._v(" "),
-                _c("h2", [_vm._v("Login Logs")]),
+                _vm._m(1),
                 _vm._v(" "),
                 _vm._l(_vm.login_logs, function(log, index) {
                   return _c("div", { key: index }, [
@@ -38405,6 +38405,14 @@ var staticRenderFns = [
         { staticClass: "btn btn-primary", attrs: { type: "submit" } },
         [_vm._v("Login ")]
       )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-sm-6 offset-3 text-center" }, [
+      _c("h2", [_vm._v("User Records")])
     ])
   }
 ]

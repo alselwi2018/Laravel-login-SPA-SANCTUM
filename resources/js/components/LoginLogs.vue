@@ -18,9 +18,11 @@
                 </form>
                 </div>
                 <div class="row mt-4" v-if="login_logs.length">
-                <div class="col-sm-6 offset-3"></div>
-                <h2>Login Logs</h2>
+                <div class="col-sm-6 offset-3 text-center">
+                <h2>User Records</h2>
+                </div>
                 <div class="" v-for="(log,index) in login_logs" :key="index">
+                    
                     <em v-text="log.created_at"></em><br>
                     <b v-text="log.secret"></b>
                 </div>
